@@ -8,7 +8,7 @@ test('User can login successfully', async ({ page }) => {
   await loginpage.gotoLoginPage();
   await loginpage.login('standard_user', 'secret_sauce');
 
-  await expect(page).toHaveURL('/inventory/')
+  await expect(page).toHaveURL(/inventory/)
 
 
 
